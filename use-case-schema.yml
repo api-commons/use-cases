@@ -1,0 +1,27 @@
+---
+"$id": https://github.com/api-commons/use-cases/blob/main/use-case-schema.yml
+"$schema": https://json-schema.org/draft/2020-12/schema
+title: Use Case
+type: object
+properties:
+  who:
+    type: string
+    description: Who (person or demographic) is using an API, focusing on the person, team, company, or demographic who is behind usage.
+  what:
+    type: string
+    description: What is the consumer going to do with the API, focusing on the big picture of the application or integration.
+  how:
+    description: How is a consumer going to use an API, focusing more on the technical details of programming language or integration.
+    type: string
+  why:
+    description: Why is the consumer going to use an API, getting more information on the incentive behind what motivates a consumer.
+    type: string   
+  where:
+    description: Where will the API be used by consumer, focusing on the on-premise, in the cloud, and other geographical or regional details.
+    type: string
+  operations:
+    description: An array of the unique OpenAPI operationId which apply to this particular use case being defined, ensuring technical alignment.
+    type: array
+    items:
+      type: string  
+
